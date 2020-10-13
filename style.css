@@ -55,6 +55,25 @@ main {
 
 /*Cards*/
 
+.row {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.card {
+    grid-row: 1;
+}
+
+.card h2 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
 
 /*Footer*/
 

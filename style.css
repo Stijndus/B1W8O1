@@ -5,9 +5,9 @@
 
 /*Page*/
 
-div {
-    width: 1100px;
-    margin: 0 auto;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1100px;
 }
 
 
@@ -16,6 +16,23 @@ div {
 header {
     background-image: url("img/header_bg.png");
     background-repeat: repeat;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+header nav ul {
+    margin-top: 30px;
+    text-align: center;
+}
+
+header nav ul li {
+    padding-left: 40px;
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #314759;
 }
 
 
@@ -55,13 +72,15 @@ main {
 
 /*Cards*/
 
-.row {
+.grid-container-row {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 25px;
 }
 
 .card {
     grid-row: 1;
+    justify-self: center;
 }
 
 .card h2 {
@@ -85,4 +104,5 @@ footer {
 footer p {
     text-align: center;
     padding: 20px;
+    color: white;
 }

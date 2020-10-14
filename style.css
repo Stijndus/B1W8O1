@@ -5,9 +5,15 @@
 
 /*Page*/
 
+body {
+    display: grid;
+    grid-template-columns: auto 1100px auto;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1100px;
+    grid-column: 2;
 }
 
 
